@@ -14,7 +14,7 @@ npm install crc16-itu
 Usage:
 
 ```
-var crc16 = require('crc-itu').crc16;
+var crc16 = require('crc16-itu');
 
 // with string and encoding
 var ret = crc16('0d0103588990501766460026', 'hex');
