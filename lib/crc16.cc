@@ -56,7 +56,7 @@ U16 GetCrc162(const U8* pData, size_t nLength)
 {
   U16 fcs = 0xffff; // initialization
   while(nLength>0){
-    fcs = (fcs >> 8) ^ crctab16[(fcs ^ *pData) & 0xff];
+    fcs = (fcs >> 8) ^ crc16tab[(fcs ^ *pData) & 0xff];
     nLength--;
     pData++;
   }

@@ -1,6 +1,6 @@
 {
   "name": "crc16-itu",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Native node addon to calculate CRC16 values.",
   "main": "index.js",
   "scripts": {
