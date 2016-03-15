@@ -8,7 +8,7 @@ Requirement:
 Install:
 
 ```
-npm install crc-itu
+npm install crc16-itu
 ```
 
 Usage:
