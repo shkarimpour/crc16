@@ -1,35 +1,26 @@
-# CRC16 
+crc-itu
+=======
+Its a fork of crc-itu(https://raw.githubusercontent.com/damphat/crc-itu/) compatible with newer versions of node.
 
-![Downloads](https://img.shields.io/npm/dt/crc16.svg)
-![npm version](https://img.shields.io/npm/v/crc16.svg)
-![node version](https://img.shields.io/node/v/crc16.svg)
-![dependencies](https://img.shields.io/david/salakar/crc16.svg)
-![dev dependencies](https://img.shields.io/david/dev/salakar/crc16.svg)
-![License](https://img.shields.io/npm/l/crc16.svg)
+Requirement:
+- Compiler: g++ 4.8 or later
 
-Native node addon to calculate CRC16 values.
-
-## Installation
+Install:
 
 ```
-npm i crc16 --save
+npm install crc-itu
 ```
 
-## Usage
+Usage:
 
-##### `CRC16(stringOrBuffer, [optional] encoding)`
-
- - **stringOrBuffer**: String or a buffer. If a string is provided it will automatically be converted to a buffer.
- - **encoding**: Used for string to buffer conversion - only when a string is provided in `stringOrBuffer`
-
-```javascript
-var CRC16 = require('crc16');
-console.log(CRC16('some_value'));
-console.log(CRC16('0d0103588990501766460026', 'hex'));
-
-// calculate a redis hash slot
-console.log(CRC16('key') & 16383);
 ```
+var crc16 = require('crc-itu').crc16;
 
-## License
-MIT
+// with string and encoding
+var ret = crc16('0d0103588990501766460026', 'hex');
+console.log(ret.toString(16)); // 7bf9
+
+// with buffer
+var buff = new Buffer('0d0103588990501766460026', 'hex');
+var ret = crc16(buff);
+console.log(ret.toString(16)); // 7bf9
