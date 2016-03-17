@@ -1,7 +1,7 @@
 {
   "name": "crc16-itu",
-  "version": "1.0.4",
-  "description": "Native node addon to calculate CRC16 values.",
+  "version": "1.0.6",
+  "description": "Native node addon to calculate CRC16 ITU values.",
   "main": "index.js",
   "scripts": {
     "test": "node test.js",
@@ -12,13 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/salakar/crc16.git"
+    "url": "https://github.com/shkarimpour/crc16.git"
   },
   "keywords": [
+    "error checking",
+    "crc",
     "crc16",
+    "itu",
     "native",
-    "addon",
-    "redis"
+    "addon"
   ],
   "author": "shaahin.karimpour902@gmail.com",
   "gypfile": true,
