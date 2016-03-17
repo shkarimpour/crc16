@@ -1,4 +1,4 @@
-crc-itu
+crc16-itu
 =======
 Its a fork of crc-itu(https://raw.githubusercontent.com/damphat/crc-itu/) compatible with newer versions of node.
 
